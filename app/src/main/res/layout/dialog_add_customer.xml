@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/view_colse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_close_35" />
+
+    <EditText
+        android:id="@+id/member_fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_colse"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/avt1"
+        android:drawablePadding="5dp"
+        android:hint="first name"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/mem_lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_fname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/avt2"
+        android:drawablePadding="5dp"
+        android:hint="last name"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/mem_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mem_lname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/sex_16"
+        android:drawablePadding="5dp"
+        android:hint="sex"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/mem_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mem_gender"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/adres1_16"
+        android:drawablePadding="5dp"
+        android:hint="adress"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/mem_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mem_adress"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/phone_16"
+        android:drawablePadding="5dp"
+        android:hint="number phone"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/mem_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mem_phone"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/mail_16"
+        android:drawablePadding="5dp"
+        android:hint="email"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mem_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_button_white"
+        android:drawableLeft="@drawable/adduse36"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="ADD CUSTOMER"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mem_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_button_white"
+        android:drawableLeft="@drawable/adduse36"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="UPDATE CUSTOMER"
+        android:textColor="@color/black" />
+
+
+
+</RelativeLayout>

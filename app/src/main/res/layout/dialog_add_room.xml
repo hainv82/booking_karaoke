@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/border_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/view_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_close_35" />
+
+
+    <EditText
+        android:id="@+id/room_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_close"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/room_30"
+        android:drawablePadding="5dp"
+        android:hint="name room..."
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+
+    <RadioGroup
+        android:layout_margin="5dp"
+        android:id="@+id/radio_stt"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/room_name"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại phòng:" />
+        <RadioButton
+            android:drawableTop="@drawable/vip_30"
+            android:gravity="center"
+            android:id="@+id/rdbtn_vip"
+            android:text="VIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:id="@+id/rdbtn_normal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="NORMAL"
+            android:drawableTop="@drawable/poor2_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_stt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_button"
+        android:drawableLeft="@drawable/add_item_35"
+        android:gravity="center"
+        android:text=" Add Items " />
+
+    <TextView
+        android:id="@+id/add_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_stt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_button"
+        android:drawableLeft="@drawable/add_30"
+        android:gravity="center"
+        android:text=" ADD ROOM " />
+    <TextView
+        android:id="@+id/update_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_stt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_button"
+        android:drawableLeft="@drawable/update_36"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text=" UPDATE ROOM " />
+
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/square_button_white2"
+    android:padding="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/view_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_close_35" />
+
+    <LinearLayout
+        android:id="@+id/layout_name_stt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_close"
+        android:layout_toEndOf="@+id/check_in"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="NAME" />
+
+        <TextView
+            android:id="@+id/room_stt_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_name"
+            android:layout_marginTop="5dp"
+            android:text="Status booking room" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/room_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_type_view"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toStartOf="@+id/room_stt_type"
+        android:drawableRight="@drawable/pending_30"
+        android:gravity="center"
+        android:text="ID" />
+
+    <TextView
+
+        android:id="@+id/room_stt_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_name_stt"
+        android:layout_toEndOf="@+id/check_in"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:text="stt type" />
+
+    <TextView
+        android:id="@+id/tag_type_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/room_stt_type"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableRight="@drawable/vip_30"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:text="VIP" />
+
+    <TextView
+        android:id="@+id/update_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/update_36"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="UPDATE" />
+
+    <TextView
+        android:id="@+id/check_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_room"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/recept_40"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="CHECK \nRECEPT" />
+
+
+    <TextView
+        android:id="@+id/ic_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_in"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableTop="@drawable/lock_36"
+        android:gravity="center"
+        android:text="LOCK" />
+
+    <TextView
+        android:id="@+id/ic_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_in"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:drawableTop="@drawable/unlock_36"
+        android:gravity="center"
+        android:text="UNLOCK" />
+
+
+
+
+</RelativeLayout>

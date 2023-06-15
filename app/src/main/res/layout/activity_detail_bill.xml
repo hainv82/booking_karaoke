@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/square_button_white2"
+    android:padding="4dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/view_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/exit2_35" />
+
+    <TextView
+        android:id="@+id/bar_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toEndOf="@+id/view_exit"
+        android:background="@drawable/square_button_white"
+        android:drawableRight="@drawable/mic_35"
+        android:gravity="center"
+        android:padding="5dp"
+        android:paddingHorizontal="10dp"
+        android:text=" Detail Bill"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/layout_recept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_customer"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/square_button_white2"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/textrecep"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="RECEPT" />
+
+        <TextView
+            android:id="@+id/bookingId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textrecep"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/id_24"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="bookingId\nxx" />
+
+        <TextView
+            android:id="@+id/roomId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookingId"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/room_24"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="roomId\nxx" />
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roomId"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/order_24"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="orderID\nxx" />
+
+
+        <TextView
+            android:id="@+id/time_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderId"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/timeline_24"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="TimeStart:" />
+
+        <TextView
+            android:id="@+id/statusCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_start"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/status_24"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Status" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_customer"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/layout_recept"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/destroy_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/discount"
+            android:drawableTop="@drawable/destroy_50"
+            android:gravity="center"
+            android:text="Cancel\nBill" />
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/destroy_bill"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/order"
+            android:drawableTop="@drawable/pay_50"
+            android:gravity="center"
+            android:text="Payment" />
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/destroy_bill"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:drawableTop="@drawable/order_50"
+            android:gravity="center"
+            android:text="Order" />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableTop="@drawable/discount_50"
+            android:gravity="center"
+            android:text="Discount" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_recept"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/billId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/id_24"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="billId\nxx" />
+
+        <TextView
+            android:id="@+id/bill_sdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/billId"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/phone_24"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="sdt\nxx" />
+
+
+        <TextView
+            android:id="@+id/time_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billId"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/timeline_24"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Time Used:xx" />
+
+        <TextView
+            android:id="@+id/discount_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_used"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/voucher1_24"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Dicount percent" />
+
+        <TextView
+            android:id="@+id/percent_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discount_percent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/voucher2_24"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Discount money" />
+
+        <TextView
+            android:id="@+id/textorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/percent_money"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/order_30"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="List order" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textorder"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

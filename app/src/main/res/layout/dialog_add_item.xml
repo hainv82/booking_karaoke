@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/border_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/view_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_close_35" />
+
+        <EditText
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_close"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/tag_24"
+            android:drawablePadding="5dp"
+            android:hint="items name"
+            android:padding="5dp"
+            android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_name"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/dolla_24"
+        android:drawablePadding="5dp"
+        android:hint="item price"
+        android:imeOptions="actionSearch"
+        android:inputType="numberSigned"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/item_descrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_price"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/descrip_24"
+            android:drawablePadding="5dp"
+            android:hint="description..."
+            android:padding="5dp"
+            android:textSize="12dp" />
+
+
+        <RadioGroup
+            android:layout_margin="5dp"
+            android:id="@+id/radio_stt"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/item_descrip"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:drawableTop="@drawable/have_35"
+                android:gravity="center"
+                android:id="@+id/rdbtn_have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:id="@+id/rdbtn_outstock"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/out_of_stock_35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    <TextView
+        android:id="@+id/add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_stt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_button"
+        android:drawableLeft="@drawable/add_item_35"
+        android:gravity="center"
+        android:text=" Add Items " />
+    <TextView
+        android:id="@+id/update_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_stt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_button"
+        android:drawableLeft="@drawable/update_36"
+        android:gravity="center"
+        android:text=" Update Items " />
+
+</RelativeLayout>

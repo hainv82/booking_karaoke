@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_room"
+        android:icon="@drawable/room_35"
+        android:title="@string/title_room" />
+
+    <item
+        android:id="@+id/nav_service"
+        android:icon="@drawable/service_35"
+        android:title="@string/title_service" />
+
+    <item
+        android:id="@+id/nav_guest"
+        android:icon="@drawable/member_35"
+        android:title="@string/title_member" />
+
+
+</menu>

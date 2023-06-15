@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/square_button_white2"
+    android:layout_margin="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/sl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/item_name"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:text="xSL"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:paddingHorizontal="5dp"
+        android:text="ten san pham" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:paddingHorizontal="5dp"
+        android:text="SL" />
+
+</RelativeLayout>

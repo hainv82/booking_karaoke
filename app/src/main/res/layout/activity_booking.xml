@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking">
+
+    <ImageView
+        android:id="@+id/view_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/exit2_35" />
+
+    <TextView
+        android:id="@+id/bar_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toEndOf="@+id/view_exit"
+        android:background="@drawable/border_button"
+        android:drawableRight="@drawable/mic_35"
+        android:gravity="center"
+        android:padding="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="BOOKING"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chose_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_customer"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/clock_45"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Chose time booking room!" />
+
+    <TextView
+        android:id="@+id/chose_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chose_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/guest_booking_45"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Chose customer booking room!" />
+
+    <TextView
+        android:id="@+id/booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chose_guest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableTop="@drawable/booking_45"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="Booking!" />
+
+    <RelativeLayout
+        android:id="@+id/layout_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/square_button_white2">
+
+        <TextView
+            android:id="@+id/recept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/square_button_white2"
+            android:drawableRight="@drawable/recept_40"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Recept Booking Data" />
+        <TextView
+            android:layout_below="@+id/recept"
+            android:id="@+id/bookingId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/square_button_white2"
+            android:drawableLeft="@drawable/id_24"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="bookingId" />
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookingId"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/square_button_white2"
+            android:drawableLeft="@drawable/timeline_24"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="startTime" />
+
+        <TextView
+            android:id="@+id/roomId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startTime"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/square_button_white2"
+            android:drawableLeft="@drawable/roomid_24"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="roomId" />
+
+        <TextView
+            android:id="@+id/guestPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roomId"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/square_button_white2"
+            android:drawableLeft="@drawable/call_24"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="guestPhoneNumber" />
+
+        <TextView
+            android:id="@+id/guestFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guestPhoneNumber"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/square_button_white2"
+            android:drawableLeft="@drawable/face_24"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="guestFullName" />
+
+        <TextView
+            android:id="@+id/staffUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guestFullName"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/square_button_white2"
+            android:drawableLeft="@drawable/tag_staff"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="staffUserName" />
+
+        <TextView
+            android:id="@+id/statusCodeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/staffUserName"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/square_button_white2"
+            android:drawableLeft="@drawable/status_24"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="statusCodeName" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

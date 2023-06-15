@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillActivity">
+
+    <ImageView
+        android:id="@+id/view_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/exit2_35" />
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toEndOf="@+id/view_exit"
+        android:background="@drawable/border_button"
+        android:drawableRight="@drawable/mic_35"
+        android:gravity="center"
+        android:padding="5dp"
+        android:paddingHorizontal="10dp"
+        android:text="BILLING"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtsort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill by:"
+        android:layout_below="@+id/view_exit"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/view_exit" />
+    <RelativeLayout
+        android:layout_below="@+id/txtsort"
+        android:id="@+id/layout_sort"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/date_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_button"
+            android:drawableTop="@drawable/date_35"
+            android:padding="3dp"
+            android:text="View by date" />
+
+        <TextView
+            android:id="@+id/customer_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/date_sort"
+            android:background="@drawable/square_button"
+            android:drawableTop="@drawable/customer_35"
+            android:padding="3dp"
+            android:text="View by customer" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_sort"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/search_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/square_button_white"
+            android:drawableLeft="@drawable/phone_24"
+            android:drawablePadding="5dp"
+            android:hint="search number phone"
+            android:padding="5dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/search_phone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rcv_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+DialogAddItem chưa xử lí luồn API _ xong UI
+//call api add sp & reload _
+api 13 . xem order bill = rooomID -> bổ sung button xem vào detail roôm -> dialog detail + button check in
+api 16 xem ỏdẻ bill =sdt -> list khách hàng thêm swipe xem phiếu -> dialog detail + button check in
+-----403-----------
+
+else if (resOrder.getStatus().equals("403")){
+                        Log.e("==403", resOrder.getMessage());
+                        Toast.makeText(mContext, resOrder.getMessage(), Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(DetailBill.this, MainActivity.class);
+                        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        startActivity(i);
+                    } else{
+                        UIHelper.showAlertDialog(mContext,resOrder.getStatus(),resOrder.getMessage(),R.drawable.troll_64);
+                        Toast.makeText(mContext, resOrder.getMessage(), Toast.LENGTH_SHORT).show();
+                        Log.e("==err", resOrder.getStatus() + "-" + resOrder.getMessage());
+                    }
+
+--------------------
+
+
+//=============ERR
+CASE khách hàng bị khóa vẫn cho đặt phòng
+
+row_one_recept -            "bookingId": 5,
+                            "startTime": "2021-11-20T17:50:00",
+                            "roomId": 5,
+                            "statusCodeName": "PENDING"
+WindowManager: BadTokenException or InvalidDisplayException, clean up.
+=> Lỗi xử lí 403 ở các dialog
+//update UX & flow
+-update staff in profile of manager
+====customer acti ===
+-update customer : exists email -> hide editext email
+-recept in sw=ipe customer: filter by status: pending, done , cancel, booked
+hide/show button checkin - cancel booking
+-search by numberphone
+======booking room ====
+empty room -> filter by EMPTY
+color empty , booked ,
+view booking : time \n , add title ""
+detail rooom
+title detail recept
+
+//detail bill:
+checkin-> xem recept by roomid api 13-> detail recept
+
+auto load today
+search sdt
+view by customer
+"" textview
+text double disocunt 20.0 time xxTxx
+ORDER: -serach sp
+list order
+xSL
+//search order on detail bill
+status on detail bill
+recept DONE=> hide button

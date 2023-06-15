@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/border_button"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_close_35" />
+
+    <TextView
+        android:id="@+id/tvuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="monospace"
+        android:text="Username:"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvuser"
+        android:layout_marginHorizontal="20dp"
+        android:drawableLeft="@drawable/icon_avatar_x24"
+        android:fontFamily="monospace"
+        android:textSize="16dp" />
+    <TextView
+        android:layout_below="@+id/txt_username"
+        android:id="@+id/tvpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:fontFamily="monospace"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="20dp" />
+
+    <EditText
+        android:id="@+id/txt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvpass"
+        android:layout_marginHorizontal="20dp"
+        android:drawableLeft="@drawable/icon_padlock_x24"
+        android:drawableRight="@drawable/ic_sharingan"
+        android:fontFamily="monospace"
+        android:inputType="textPassword"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvcfpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pass"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="monospace"
+        android:text="Confirm Password:"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txt_cf_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvcfpass"
+        android:layout_marginHorizontal="20dp"
+        android:drawableLeft="@drawable/icon_padlock_x24"
+        android:drawableRight="@drawable/ic_sharingan"
+        android:fontFamily="monospace"
+        android:inputType="textPassword"
+        android:textSize="16dp" />
+    <TextView
+        android:layout_below="@+id/txt_cf_pass"
+        android:id="@+id/tv_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:fontFamily="monospace"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="20dp" />
+
+    <EditText
+        android:id="@+id/txt_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_firstname"
+        android:layout_marginHorizontal="20dp"
+        android:drawableLeft="@drawable/first_name"
+        android:fontFamily="monospace"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_below="@+id/txt_first_name"
+        android:id="@+id/tv_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name:"
+        android:fontFamily="monospace"
+        android:textSize="16dp"
+        android:layout_marginHorizontal="20dp" />
+
+    <EditText
+        android:id="@+id/txt_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lastname"
+        android:layout_marginHorizontal="20dp"
+        android:drawableLeft="@drawable/last_name"
+        android:fontFamily="monospace"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_last_name"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="monospace"
+        android:text="Sex :"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txt_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sex"
+        android:layout_marginHorizontal="20dp"
+        android:drawableLeft="@drawable/sex_16"
+        android:fontFamily="monospace"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/tv_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_sex"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="monospace"
+        android:text="Email :"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/txt_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mail"
+        android:layout_marginHorizontal="20dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:fontFamily="monospace"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_focused"
+        android:text="SIGN IN"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainMenu">
+
+    <RelativeLayout
+        android:id="@+id/layout_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/x_action_bar">
+
+        <Button
+            android:id="@+id/nav"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_setting_35" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="10dp"
+            android:text="MAIN MENU"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/nav_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/bottle_35"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/x_action_bar"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/nav_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toEndOf="@+id/nav_room"
+            android:drawableTop="@drawable/service_35"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="BILL"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/nav_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toEndOf="@+id/nav_service"
+            android:drawableTop="@drawable/member_35"
+            android:padding="5dp"
+            android:text="Customer"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/nav_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:drawableTop="@drawable/room_35"
+            android:padding="5dp"
+            android:text="Booking Room"
+            android:textColor="@color/black" />
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:visibility="gone"
+        android:background="@color/black"
+        android:elevation="5dp" />
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/card_filter"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/x_blue"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/boy_64" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_ketoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ketoan_64" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/boss_64" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_employee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/employee_64" />
+
+
+            <TextView
+                android:id="@+id/tv_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_back"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="== PROFILE ==" />
+
+            <TextView
+                android:id="@+id/text_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_role"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_dropdown"
+                android:drawableRight="@drawable/ic_arrow"
+                android:paddingHorizontal="14dp"
+                android:text="Information"
+                android:textColor="@color/white" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_info"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_info"
+                android:layout_centerHorizontal="true"
+                android:background="@color/x_blue"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/username"
+                        android:drawablePadding="5dp"
+                        android:text="txt_username" />
+
+                    <TextView
+                        android:id="@+id/txt_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_username"
+                        android:drawableLeft="@drawable/avt1"
+                        android:drawablePadding="5dp"
+                        android:text="txt_first_name" />
+
+                    <TextView
+                        android:id="@+id/txt_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_first_name"
+                        android:drawableLeft="@drawable/avt2"
+                        android:drawablePadding="5dp"
+                        android:text="txt_last_name" />
+
+                    <TextView
+                        android:id="@+id/txt_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_last_name"
+                        android:drawableLeft="@drawable/sex_16"
+                        android:drawablePadding="5dp"
+                        android:text="txt_gender" />
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_gender"
+                        android:drawableLeft="@drawable/mail_16"
+                        android:drawablePadding="5dp"
+                        android:text="txt_email" />
+
+                    <TextView
+                        android:id="@+id/txt_sdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_email"
+                        android:drawableLeft="@drawable/phone_16"
+                        android:drawablePadding="5dp"
+                        android:text="txt_sdt" />
+
+                    <TextView
+                        android:id="@+id/txt_adress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_sdt"
+                        android:drawableLeft="@drawable/adres1_16"
+                        android:drawablePadding="5dp"
+                        android:text="txt_adress1" />
+                    <TextView
+
+                        android:id="@+id/txt_adress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_adress1"
+                        android:drawableLeft="@drawable/adres2_16"
+                        android:drawablePadding="5dp"
+                        android:text="txt_adress2" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_update_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_info"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_dropdown2"
+                android:drawableRight="@drawable/ic_arrow"
+                android:paddingHorizontal="14dp"
+                android:text="Update Info"
+                android:textColor="@color/white" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_update"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_update_info"
+                android:layout_centerHorizontal="true"
+                android:background="@color/x_blue"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/update_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:drawableLeft="@drawable/mail_16"
+                        android:drawablePadding="5dp"
+                        android:text="update_email"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:id="@+id/update_sdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/update_email"
+                        android:drawableLeft="@drawable/phone_16"
+                        android:drawablePadding="5dp"
+                        android:text="update_sdt"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:id="@+id/update_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/update_sdt"
+                        android:drawableLeft="@drawable/sex_16"
+                        android:drawablePadding="5dp"
+                        android:text="txt_gender"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:id="@+id/update_adres1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/update_gender"
+                        android:drawableLeft="@drawable/adres1_16"
+                        android:drawablePadding="5dp"
+                        android:text="update_adres1"
+                        android:textSize="12dp" />
+                    <EditText
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:id="@+id/update_adres2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/update_adres1"
+                        android:drawableLeft="@drawable/adres2_16"
+                        android:drawablePadding="5dp"
+                        android:text="update_adres2"
+                        android:textSize="12dp" />
+
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/btn_update"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/update_adres2"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/border_button"
+                        android:text="UPDATE"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_qlnv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_update"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_dropdown3"
+                android:drawableRight="@drawable/ic_arrow"
+                android:paddingHorizontal="14dp"
+                android:text="Staff Management"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_adduser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_qlnv"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_button"
+                android:drawableLeft="@drawable/adduse36"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingHorizontal="5dp"
+                android:text="ADD USER" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/tv_adduser"
+                android:visibility="gone"
+                android:id="@+id/rcv_staff"
+                android:layout_width="230dp"
+                android:layout_height="400dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp" />
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/ic_arrow"
+                android:paddingHorizontal="10dp"
+                android:text="LOG OUT" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:id="@+id/card_menuitem"
+        android:layout_alignParentRight="true"
+        android:background="@color/x_blue"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/content_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawableTop="@drawable/order_45"
+                android:gravity="center"
+                android:text="MENU" />
+
+            <TextView
+                android:id="@+id/add_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_menu"
+
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/new_35"
+                android:gravity="center"
+                android:text=" (+)" />
+
+            <TextView
+                android:id="@+id/reload_rcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_product"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/reload_24"
+                android:gravity="center"
+                android:text="List Item Order" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_menu_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reload_rcv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

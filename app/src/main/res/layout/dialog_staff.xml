@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/border_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/view_info"
+        android:layout_above="@+id/btn_changepass"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/employee_64" />
+
+    <Button
+        android:id="@+id/btn_changepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view_info"
+        android:layout_toStartOf="@+id/view_info"
+        android:text="New Pass" />
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/shuwdown_48" />
+    <RelativeLayout
+        android:id="@+id/view_info"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/img_close"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="5dp"
+            android:text="txt_username" />
+
+        <TextView
+            android:id="@+id/txt_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_username"
+            android:drawableLeft="@drawable/avt1"
+            android:drawablePadding="5dp"
+            android:text="txt_first_name" />
+
+        <TextView
+            android:id="@+id/txt_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_first_name"
+            android:drawableLeft="@drawable/avt2"
+            android:drawablePadding="5dp"
+            android:text="txt_last_name" />
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_last_name"
+            android:drawableLeft="@drawable/sex_16"
+            android:drawablePadding="5dp"
+            android:text="txt_gender" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_gender"
+            android:drawableLeft="@drawable/mail_16"
+            android:drawablePadding="5dp"
+            android:text="txt_email" />
+
+        <TextView
+            android:id="@+id/txt_sdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_email"
+            android:drawableLeft="@drawable/phone_16"
+            android:drawablePadding="5dp"
+            android:text="txt_sdt" />
+
+        <TextView
+            android:id="@+id/txt_adress1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_sdt"
+            android:drawableLeft="@drawable/adres1_16"
+            android:drawablePadding="5dp"
+            android:text="txt_adress1" />
+        <TextView
+
+            android:id="@+id/txt_adress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_adress1"
+            android:drawableLeft="@drawable/adres2_16"
+            android:drawablePadding="5dp"
+            android:text="txt_adress2" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

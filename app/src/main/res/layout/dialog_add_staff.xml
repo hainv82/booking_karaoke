@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/view_colse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_close_35" />
+
+    <EditText
+        android:id="@+id/add_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_colse"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/user_16"
+        android:drawablePadding="5dp"
+        android:hint="add_username"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/add_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_username"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/pass_16"
+        android:drawablePadding="5dp"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:hint="add_pw"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/add_cf_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_pw"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/pass_16"
+        android:drawablePadding="5dp"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:hint="add_cf_pw"
+        android:textSize="12dp" />
+    <EditText
+        android:id="@+id/add_fname"
+        android:layout_below="@+id/add_cf_pw"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/avt1"
+        android:drawablePadding="5dp"
+        android:hint="add_fname"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/add_lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_fname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/avt2"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:hint="add_lname"
+        android:textSize="12dp" />
+    <EditText
+        android:id="@+id/add_email"
+        android:layout_below="@+id/add_lname"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/mail_16"
+        android:drawablePadding="5dp"
+        android:hint="add_email"
+        android:textSize="12dp" />
+
+    <EditText
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/add_sdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_email"
+        android:drawableLeft="@drawable/phone_16"
+        android:drawablePadding="5dp"
+        android:hint="add_sdt"
+        android:textSize="12dp" />
+
+    <EditText
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/add_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_sdt"
+        android:drawableLeft="@drawable/sex_16"
+        android:drawablePadding="5dp"
+        android:hint="add_gender"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/add_adres1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_gender"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableLeft="@drawable/adres1_16"
+        android:drawablePadding="5dp"
+        android:hint="add_adres1"
+        android:padding="5dp"
+        android:textSize="12dp" />
+    <EditText
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/add_adres2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_adres1"
+        android:drawableLeft="@drawable/adres2_16"
+        android:drawablePadding="5dp"
+        android:hint="add_adres2"
+        android:textSize="12dp" />
+    <EditText
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/add_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_adres2"
+        android:drawableLeft="@drawable/role_16"
+        android:drawablePadding="5dp"
+        android:hint="add_role"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_role"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/x_blue"
+        android:drawableLeft="@drawable/write_35"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="ADD USER" />
+
+
+</RelativeLayout>
